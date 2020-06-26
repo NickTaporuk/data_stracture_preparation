@@ -230,16 +230,6 @@ func MergeSorted(first, second *Node, fnc func(node *Node) bool) (dummy *Node, e
 	return nil, errors.New("some of from there lists is unsorted")
 }
 
-func MoveNode(destRef, sourceRef *Node) {
-	newNode := *sourceRef
-
-	sourceRef = newNode.Next
-
-	newNode.Next = destRef
-
-	destRef = &newNode
-}
-
 func (l SingleLinkedList) String() (str string) {
 	node := l.Head
 	str = DisplayRecursion(node)
