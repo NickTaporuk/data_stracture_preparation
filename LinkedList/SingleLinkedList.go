@@ -211,16 +211,13 @@ func MergeSorted(first, second *Node, fnc func(node *Node) bool) (dummy *Node, e
 			}
 
 			if first.Value <= second.Value {
-				//MoveNode(dummy, first)
 				dummy.Next = first
 
 				first = first.Next
 
 			} else {
-				//MoveNode(dummy, second)
 				dummy.Next = second
 				second = second.Next
-
 			}
 		}
 
