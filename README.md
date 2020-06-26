@@ -1,1 +1,1 @@
-# data_stracture_preparation
+# data_structure_preparation
